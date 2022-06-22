@@ -1,8 +1,10 @@
-/* General Styling */
+/* ---General--- */
 :root {
     --primary-text-color: #fff;
     --secondary-text-color: #c3b782;
-    --background-color: #121212;
+    --other-text-color-1: #9cc6cd;
+    --primary-background-color: #121212;
+    --secondary-background-color: #3a3a3a;
 }
 
 * {
@@ -10,8 +12,15 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--primary-background-color);
     font-family: 'Courier New', Courier, monospace;
+    color: var(--primary-text-color);
+}
+
+.header-footer {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--primary-background-color);
 }
 
 a {
@@ -19,12 +28,18 @@ a {
     color: var(--primary-text-color);
 }
 
-/* Header and Navigation Bar */
+a:hover {
+    color: var(--secondary-text-color);
+}
+
+p {
+    color: var(--other-text-color-1);
+}
+/* ...End of General... */
+
+/* ---Header and Nav--- */
 header {
-    width: 100%;
     position: fixed;
-    padding: 15px 10px;
-    background-color: var(--background-color);
 }
 
 header h1 {
@@ -43,8 +58,9 @@ header li {
     display: inline-block;
     margin-left: 50px;
 }
+/* ...End of Header and Nav... */
 
-/* Hero Section */
+/* ---Hero--- */
 .hero {
     height: 100vh;
     width: 100%;
@@ -53,9 +69,28 @@ header li {
     background-size: cover;
     background-position: center;
 }
+/* ...End of Hero... */
 
-/* Main Section */
-.main-container h2 {
-    font-size: 250%;
-    color: var(--primary-text-color);
+/* ---Main--- */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
 }
+
+.main-container article {
+    margin: 2% 0;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 250%;
+}
+/* ...End of Main... */
+
+/* ---Footer--- */
+footer {
+    text-align: center;
+    border-top: var(--primary-text-color) solid 1px;
+}
+/* ...End of Footer... */
