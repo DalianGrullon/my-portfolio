@@ -1,8 +1,8 @@
 /* ---General--- */
 :root {
-    --primary-text-color: #fff;
-    --secondary-text-color: #c3b782;
-    --other-text-color-1: #9cc6cd;
+    --primary-color: #fff;
+    --secondary-color: #c3b782;
+    --other-color-1: #9cc6cd;
     --primary-background-color: #121212;
     --secondary-background-color: #3a3a3a;
 }
@@ -14,7 +14,7 @@
 body {
     background-color: var(--primary-background-color);
     font-family: 'Courier New', Courier, monospace;
-    color: var(--primary-text-color);
+    color: var(--primary-color);
 }
 
 .header-footer {
@@ -25,38 +25,33 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
 }
 
 p {
-    color: var(--other-text-color-1);
+    color: var(--other-color-1);
 }
 /* ...End of General... */
 
 /* ---Header and Nav--- */
 header {
-    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header h1 {
-    display: inline-block;
     margin-left: 30px;
     font-size: 300%;
 }
 
-header nav {
-    float: right;
-    margin-right: 30px;
-    padding: 20px 10px;
-}
-
 header li {
     display: inline-block;
-    margin-left: 50px;
+    margin: 20px 35px;
 }
 /* ...End of Header and Nav... */
 
@@ -75,7 +70,8 @@ header li {
 .main-container {
     display: flex;
     flex-direction: column;
-    margin: 5% 5%;
+    text-align: center;
+    margin: 3% 2%;
 }
 
 .main-container article {
@@ -83,14 +79,24 @@ header li {
     justify-content: space-evenly;
 }
 
+article p {
+    font-size: 110%;
+    width: 60%;
+    margin: 1% auto 10%;
+    padding-top: 20px;
+}
+
 h2 {
+    display: inline;
+    padding-bottom: 8px;
     font-size: 250%;
+    border-bottom: var(--primary-color) solid 2px;
 }
 /* ...End of Main... */
 
 /* ---Footer--- */
 footer {
     text-align: center;
-    border-top: var(--primary-text-color) solid 1px;
+    border-top: var(--primary-color) solid 1px;
 }
 /* ...End of Footer... */
