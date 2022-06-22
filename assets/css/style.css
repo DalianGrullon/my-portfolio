@@ -75,8 +75,8 @@ header li {
 }
 
 .main-container article {
-    margin: 2% 0;
     justify-content: space-evenly;
+    margin-top: 2%;
 }
 
 article p {
