@@ -74,6 +74,17 @@ header li {
     margin: 3% 2%;
 }
 
+.avatar {
+    border: solid white 2px;
+    width: 30%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url(../images/7394F2FA-21B9-404B-BB4B-D067058F004A.jpeg);
+    background-position: center;
+    background-size: contain;
+}
+
 .main-container article {
     justify-content: space-evenly;
     margin-top: 2%;
