@@ -1,0 +1,61 @@
+/* General Styling */
+:root {
+    --primary-text-color: #fff;
+    --secondary-text-color: #c3b782;
+    --background-color: #121212;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+/* Header and Navigation Bar */
+header {
+    width: 100%;
+    position: fixed;
+    padding: 15px 10px;
+    background-color: var(--background-color);
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 300%;
+}
+
+header nav {
+    float: right;
+    margin-right: 30px;
+    padding: 20px 10px;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 40px;
+    background-image: url(../images/laptop-computer-screen-keyboard-technology-web-912807-pxhere.com.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main Section */
+.main-container h2 {
+    font-size: 250%;
+    color: var(--primary-text-color);
+}
