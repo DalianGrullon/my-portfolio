@@ -33,7 +33,7 @@ a:hover {
 }
 
 p {
-    color: var(--other-color-1);
+    color: var(--primary-color);
 }
 /* ...End of General... */
 
@@ -42,6 +42,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: 0.5px var(--secondary-background-color) solid;
 }
 
 header h1 {
@@ -63,6 +64,7 @@ header li {
     background-image: url(../images/laptop-computer-screen-keyboard-technology-web-912807-pxhere.com.jpg);
     background-size: cover;
     background-position: center;
+    border-bottom: 0.5px var(--secondary-background-color) solid;
 }
 /* ...End of Hero... */
 
@@ -75,7 +77,10 @@ header li {
 }
 
 .avatar {
-    border: solid white 2px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 1px var(--secondary-background-color) solid;
     width: 30%;
     height: 300px;
     width: 300px;
@@ -93,8 +98,9 @@ header li {
 article p {
     font-size: 110%;
     width: 60%;
-    margin: 1% auto 10%;
+    margin: 3% auto 8%;
     padding-top: 20px;
+    line-height: 4em;
 }
 
 h2 {
@@ -103,11 +109,17 @@ h2 {
     font-size: 250%;
     border-bottom: var(--primary-color) solid 2px;
 }
+
+.separator {
+    border: var(--secondary-background-color) solid 1px;
+    border-radius: 90%;
+    margin-bottom: 80px;
+}
 /* ...End of Main... */
 
 /* ---Footer--- */
 footer {
     text-align: center;
-    border-top: var(--primary-color) solid 1px;
+    border-top: 0.5px var(--secondary-background-color) solid;
 }
 /* ...End of Footer... */
