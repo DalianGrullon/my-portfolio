@@ -89,7 +89,7 @@ header li {
 
 article p {
     font-size: 1.5em;
-    width: 60%;
+    width: 70%;
     margin: 3% auto 8%;
     padding-top: 20px;
     line-height: 4em;
@@ -216,6 +216,10 @@ article h2 {
     header nav {
         margin: auto;
     }
+
+    article p {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 557px) {
@@ -234,6 +238,10 @@ article h2 {
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 80px;
+    }
+
+    article p {
+        font-size: 20px;
     }
 }
 /* ...End of Media Query... */
