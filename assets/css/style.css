@@ -122,9 +122,13 @@ article h2 {
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
     margin-bottom: 80px;
+}
+
+.cards-container a {
+    justify-content: space-between;
 }
 
 .cards-container a:hover #first-project {
@@ -145,9 +149,9 @@ article h2 {
 }
 
 #first-project {
-    margin: 20px 20px;
-    height: 350px;
-    width: 500px;
+    margin-right: 10px;
+    height: 300px;
+    width: 450px;
     background-image: url(../images/Screen\ Shot\ 2022-06-22\ at\ 10.22.41\ PM.png);
     background-position: center;
     background-size: 700px;
@@ -156,7 +160,7 @@ article h2 {
 }
 
 #second-project {
-    margin: 20px 45px;
+    margin-left: 10px;
     height: 300px;
     width: 450px;
     background-image: url(../images/Screen\ Shot\ 2022-06-22\ at\ 10.22.22\ PM.png);
@@ -181,6 +185,25 @@ article h2 {
 /* ...End of Contact Me Section... */
 
 /* ---Media Query--- */
+@media screen and (max-width: 1073px) {
+    .cards-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #first-project {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #second-project {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 923px) {
     header {
         flex-direction: column;
@@ -211,10 +234,6 @@ article h2 {
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 80px;
-    }
-
-    #first-project {
-        margin-left: 13px;
     }
 }
 /* ...End of Media Query... */
