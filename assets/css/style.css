@@ -17,12 +17,6 @@ body {
     color: var(--primary-color);
 }
 
-.header-footer {
-    width: 100%;
-    padding: 15px 10px;
-    background-color: var(--primary-background-color);
-}
-
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -43,6 +37,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 0.5px var(--secondary-background-color) solid;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--primary-background-color);
 }
 
 header h1 {
@@ -95,6 +92,53 @@ header li {
     margin-top: 2%;
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.cards-container a:hover #first-project {
+    border: 4px var(--secondary-color) solid;
+}
+
+.cards-container a:hover #second-project {
+    border: 4px var(--secondary-color) solid;
+}
+
+.cards-container h2 {
+    display: inline-flex;
+    padding: 8px;
+    font-size: 150%;
+    color: var(--primary-color);
+    background-color: var(--primary-background-color);
+    border: 2px var(--secondary-background-color) solid;
+}
+
+#first-project {
+    margin: 20px 20px;
+    height: 350px;
+    width: 500px;
+    background-image: url(../images/Screen\ Shot\ 2022-06-22\ at\ 10.22.41\ PM.png);
+    background-position: center;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    border: 1px var(--secondary-background-color) solid;
+}
+
+#second-project {
+    margin: 20px 45px;
+    height: 300px;
+    width: 450px;
+    background-image: url(../images/Screen\ Shot\ 2022-06-22\ at\ 10.22.22\ PM.png);
+    background-position: center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    border: 1px var(--secondary-background-color) solid;
+}
+
 article p {
     font-size: 110%;
     width: 60%;
@@ -103,11 +147,10 @@ article p {
     line-height: 4em;
 }
 
-h2 {
+article h2 {
     display: inline;
-    padding-bottom: 8px;
+    padding-bottom: 3px;
     font-size: 250%;
-    border-bottom: var(--primary-color) solid 2px;
 }
 
 .separator {
@@ -115,11 +158,21 @@ h2 {
     border-radius: 90%;
     margin-bottom: 80px;
 }
+
+.social-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.social-icon img {
+    width: 12%;
+    margin: 6% 0 auto;
+}
 /* ...End of Main... */
 
-/* ---Footer--- */
-footer {
-    text-align: center;
-    border-top: 0.5px var(--secondary-background-color) solid;
-}
-/* ...End of Footer... */
+/* ---Media Query--- */
+/* @media screen and (min-width 800px) {
+    
+} */
+/* ...End of Media Query... */
