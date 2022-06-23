@@ -29,6 +29,12 @@ a:hover {
 p {
     color: var(--primary-color);
 }
+
+.separator {
+    border: var(--secondary-background-color) solid 1px;
+    border-radius: 90%;
+    margin-bottom: 80px;
+}
 /* ...End of General... */
 
 /* ---Header and Nav--- */
@@ -37,7 +43,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 0.5px var(--secondary-background-color) solid;
-    width: 100%;
     padding: 15px 10px;
     background-color: var(--primary-background-color);
 }
@@ -65,7 +70,7 @@ header li {
 }
 /* ...End of Hero... */
 
-/* ---Main--- */
+/* ---Main Container Styling--- */
 .main-container {
     display: flex;
     flex-direction: column;
@@ -73,6 +78,27 @@ header li {
     margin: 3% 2%;
 }
 
+.main-container article {
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+article p {
+    font-size: 110%;
+    width: 60%;
+    margin: 3% auto 8%;
+    padding-top: 20px;
+    line-height: 4em;
+}
+
+article h2 {
+    display: inline;
+    padding-bottom: 3px;
+    font-size: 250%;
+}
+/* ...End of Main Container Styling... */
+
+/* ---About Me--- */
 .avatar {
     display: flex;
     flex-wrap: wrap;
@@ -86,12 +112,9 @@ header li {
     background-position: center;
     background-size: contain;
 }
+/* ...End of About Me... */
 
-.main-container article {
-    justify-content: space-evenly;
-    margin-top: 2%;
-}
-
+/* ---My Work Section--- */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -138,27 +161,9 @@ header li {
     background-repeat: no-repeat;
     border: 1px var(--secondary-background-color) solid;
 }
+/* ...End of My Work Section... */
 
-article p {
-    font-size: 110%;
-    width: 60%;
-    margin: 3% auto 8%;
-    padding-top: 20px;
-    line-height: 4em;
-}
-
-article h2 {
-    display: inline;
-    padding-bottom: 3px;
-    font-size: 250%;
-}
-
-.separator {
-    border: var(--secondary-background-color) solid 1px;
-    border-radius: 90%;
-    margin-bottom: 80px;
-}
-
+/* ---Contact Me Section--- */
 .social-icon {
     display: flex;
     flex-wrap: wrap;
@@ -169,10 +174,43 @@ article h2 {
     width: 12%;
     margin: 6% 0 auto;
 }
-/* ...End of Main... */
+/* ...End of Contact Me Section... */
 
 /* ---Media Query--- */
-/* @media screen and (min-width 800px) {
-    
-} */
+@media screen and (max-width: 923px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin: auto;
+    }
+
+    header nav {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    header h1 {
+        text-align: center;
+    }
+
+    header li {
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    #first-project {
+        margin-left: 13px;
+    }
+}
 /* ...End of Media Query... */
