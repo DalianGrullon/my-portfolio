@@ -54,7 +54,7 @@ article p {
     width: 70%;
     margin: auto;
     padding-top: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 5px;
     line-height: 4em;
 }
 
@@ -86,7 +86,7 @@ article p {
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
-    margin-bottom: 140px;
+    margin-bottom: 160px;
 }
 
 .cards-container a {
