@@ -96,11 +96,6 @@ article p {
     line-height: 4em;
 }
 
-article h2 {
-    display: inline;
-    padding-bottom: 3px;
-    font-size: 250%;
-}
 /* ...End of Main Container Styling... */
 
 /* ---About Me--- */
@@ -175,15 +170,33 @@ a:hover .project {
 /* ...End of My Work Section... */
 
 /* ---Contact Me Section--- */
-.social-icon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+#contact-me h2 {
+    display: inline;
+    font-size: 250%;
 }
 
-.social-icon img {
-    width: 12%;
-    margin: 6% 0 auto;
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.social img {
+    margin: 60px 60px;
+    width: 80px;
+}
+
+.social a:hover img {
+    transform: rotate(360deg);
+    transition: all 0.2s;
+}
+
+.social a:active img {
+    width: 75px;
+    transition: all 0.1s;
 }
 /* ...End of Contact Me Section... */
 
