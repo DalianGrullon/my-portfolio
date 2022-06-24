@@ -132,11 +132,7 @@ article h2 {
     justify-content: space-between;
 }
 
-.cards-container a:hover #first-project {
-    border: 4px var(--secondary-color) solid;
-}
-
-.cards-container a:hover #second-project {
+a:hover .project {
     border: 4px var(--secondary-color) solid;
 }
 
@@ -149,26 +145,32 @@ article h2 {
     border: 2px var(--secondary-background-color) solid;
 }
 
-#first-project {
+.project {
     margin-right: 10px;
     height: 300px;
     width: 450px;
+    border: 1px var(--secondary-background-color) solid;
+}
+
+#first-project {
     background-image: url(../images/Screen\ Shot\ 2022-06-22\ at\ 10.22.41\ PM.png);
     background-position: center;
     background-size: 700px;
     background-repeat: no-repeat;
-    border: 1px var(--secondary-background-color) solid;
 }
 
 #second-project {
-    margin-left: 10px;
-    height: 300px;
-    width: 450px;
     background-image: url(../images/Screen\ Shot\ 2022-06-22\ at\ 10.22.22\ PM.png);
     background-position: center;
     background-size: 800px;
     background-repeat: no-repeat;
-    border: 1px var(--secondary-background-color) solid;
+}
+
+#third-project {
+    background-image: url(../images/Screen\ Shot\ 2022-06-23\ at\ 11.03.54\ PM.png);
+    background-position: right;
+    background-size: 820px;
+    background-repeat: no-repeat;
 }
 /* ...End of My Work Section... */
 
@@ -192,14 +194,8 @@ article h2 {
         justify-content: center;
     }
 
-    #first-project {
+    .project {
         margin-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #second-project {
-        margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
     }
