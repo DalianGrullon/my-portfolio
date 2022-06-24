@@ -2,9 +2,9 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #c3b782;
-    --other-color-1: #9cc6cd;
+    --other-color-1: #95d4ff;
     --primary-background-color: #121212;
-    --secondary-background-color: #3a3a3a;
+    --secondary-background-color: #2b2b2b;
 }
 
 * {
@@ -17,70 +17,17 @@ body {
     color: var(--primary-color);
 }
 
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-a:hover {
-    color: var(--secondary-color);
-}
-
 p {
     color: var(--primary-color);
 }
-
-.separator {
-    border: var(--secondary-background-color) solid 1px;
-    border-radius: 90%;
-    margin-bottom: 80px;
-}
 /* ...End of General... */
-
-/* ---Header and Nav--- */
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: 0.5px var(--secondary-background-color) solid;
-    padding: 15px 10px;
-    background-color: var(--primary-background-color);
-}
-
-header nav {
-    font-size: 1.5em;
-}
-
-header h1 {
-    margin-left: 30px;
-    font-size: 300%;
-}
-
-header li {
-    display: inline-block;
-    margin: 20px 35px;
-}
-/* ...End of Header and Nav... */
-
-/* ---Hero--- */
-.hero {
-    height: 44vh;
-    width: 100%;
-    margin-bottom: 40px;
-    background-image: url(../images/1575345096657.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-bottom: 0.5px var(--secondary-background-color) solid;
-}
-/* ...End of Hero... */
 
 /* ---Main Container Styling--- */
 .main-container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 3% 2%;
+    margin: 2% 2%;
 }
 
 .main-container article {
@@ -88,25 +35,44 @@ header li {
     margin-top: 2%;
 }
 
+span {
+    color: var(--other-color-1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--other-color-1);
+}
+
+span a:hover {
+    color: var(--secondary-color);
+    transition: all 0.3s;
+}
+
 article p {
     font-size: 1.5em;
     width: 70%;
-    margin: 3% auto 8%;
+    margin: auto;
     padding-top: 20px;
+    padding-bottom: 90px;
     line-height: 4em;
 }
 
 /* ...End of Main Container Styling... */
 
 /* ---About Me--- */
+#about-me {
+    margin-bottom: 20px;
+}
+
 .avatar {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    border: 1px var(--secondary-background-color) solid;
+    border: 1px var(--primary-color) solid;
     width: 30%;
-    height: 300px;
-    width: 300px;
+    height: 450px;
+    width: 450px;
     border-radius: 50%;
     background-image: url(../images/7394F2FA-21B9-404B-BB4B-D067058F004A.jpeg);
     background-position: center;
@@ -120,7 +86,7 @@ article p {
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 140px;
 }
 
 .cards-container a {
@@ -128,7 +94,9 @@ article p {
 }
 
 a:hover .project {
-    border: 4px var(--secondary-color) solid;
+    border: 3px var(--secondary-color) solid;
+    width: 470px;
+    transition: all 0.1s;
 }
 
 .cards-container h2 {
@@ -136,15 +104,15 @@ a:hover .project {
     padding: 8px;
     font-size: 150%;
     color: var(--primary-color);
-    background-color: var(--primary-background-color);
-    border: 2px var(--secondary-background-color) solid;
+    background-color: var(--secondary-background-color);
+    border: 1px var(--primary-color) solid;
 }
 
 .project {
     margin-right: 10px;
     height: 300px;
     width: 450px;
-    border: 1px var(--secondary-background-color) solid;
+    border: 1px var(--primary-color) solid;
 }
 
 #first-project {
@@ -169,36 +137,56 @@ a:hover .project {
 }
 /* ...End of My Work Section... */
 
-/* ---Contact Me Section--- */
-
-#contact-me h2 {
-    display: inline;
-    font-size: 250%;
+/* ---footer Section--- */
+.social-container {
+    background-color: var(--secondary-background-color);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: solid var(--primary-color) 1px;
 }
 
 .social {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
 .social img {
-    margin: 60px 60px;
+    margin: 1px 60px;
+    border-radius: 50%;
+}
+
+#linkedin {
+    width: 70px;
+}
+
+#twitter, #github {
+    padding: 20px;
     width: 80px;
+}
+
+#email {
+    padding: 10px;
+    width: 70px;
 }
 
 .social a:hover img {
     transform: rotate(360deg);
+    box-shadow: 0px 0px 40px rgb(17, 17, 17);
     transition: all 0.2s;
 }
 
 .social a:active img {
-    width: 75px;
+    transform: rotate(0deg);
+    box-shadow: 0 0 0 black;
     transition: all 0.1s;
 }
-/* ...End of Contact Me Section... */
+/* ...End of footer Section */
 
 /* ---Media Query--- */
 @media screen and (max-width: 1073px) {
@@ -215,34 +203,12 @@ a:hover .project {
 }
 
 @media screen and (max-width: 923px) {
-    header {
-        flex-direction: column;
-    }
-
-    header h1 {
-        margin: auto;
-    }
-
-    header nav {
-        margin: auto;
-    }
-
     article p {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 557px) {
-    header h1 {
-        text-align: center;
-    }
-
-    header li {
-        display: block;
-        margin: 20px 0;
-        text-align: center;
-    }
-
     body {
         display: flex;
         flex-wrap: wrap;
@@ -251,7 +217,7 @@ a:hover .project {
     }
 
     article p {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 /* ...End of Media Query... */
