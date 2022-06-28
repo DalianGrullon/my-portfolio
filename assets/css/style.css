@@ -85,8 +85,9 @@ article p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: auto;
-    margin-bottom: 160px;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 160px auto;
 }
 
 .cards-container a {
@@ -109,7 +110,7 @@ a:hover .project {
 }
 
 .project {
-    margin-right: 10px;
+    margin: 10px;
     height: 300px;
     width: 450px;
     border: 1px var(--primary-color) solid;
@@ -133,6 +134,13 @@ a:hover .project {
     background-image: url(../images/Screen\ Shot\ 2022-06-23\ at\ 11.03.54\ PM.png);
     background-position: right;
     background-size: 820px;
+    background-repeat: no-repeat;
+}
+
+#fourth-project {
+    background-image: url(../images/random-password-generator.png);
+    background-position: center;
+    background-size: 700px;
     background-repeat: no-repeat;
 }
 /* ...End of My Work Section... */
@@ -189,19 +197,6 @@ a:hover .project {
 /* ...End of footer Section */
 
 /* ---Media Query--- */
-@media screen and (max-width: 1073px) {
-    .cards-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .project {
-        margin-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 @media screen and (max-width: 923px) {
     article p {
         width: 90%;
