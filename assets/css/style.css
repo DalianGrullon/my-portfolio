@@ -143,6 +143,13 @@ a:hover .project {
     background-size: 700px;
     background-repeat: no-repeat;
 }
+
+#fifth-project {
+    background-image: url(../images/Screen\ Shot\ 2022-06-30\ at\ 6.34.10\ PM.png);
+    background-position: center;
+    background-size: 900px;
+    background-repeat: no-repeat;
+}
 /* ...End of My Work Section... */
 
 /* ---footer Section--- */
