@@ -1,57 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
     <title>Dalian Grullon Portfolio | Full-stack Web Developer</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/Dalian-logo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Dalian-logo.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/Dalian-logo.jpg">
+    <link rel="icon" sizes="16x16" href="./assets/img/Dalian-logo.jpg">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <main>
-        <section class="main-container">
-            <article id="about-me"> <!-- about me section -->
-                <div class="avatar"></div>
-                <p>
-                    Hi, I'm <span>Dalian Grullon</span> and I'm a <span>Full-stack Web Developer</span>.
-                    <br>
-                    I help people deliver their services by creating user-interfaces and systems that ensure optimal functionality and user experience.
-                    <br>
-                    <br>
-                    Check out my work below.
-                </p>
-            </article>
-            <section class="cards-container">
-                <a href="https://pbnj1.github.io/No-time-to-weight-app/" target="_blank">
-                    <div id="first-project" class="project">
-                        <h2>No Time to Weight</h2>
+
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+    
+        <!-- Name & Description -->
+        <div class="hero-content">
+            <h1>Dalian Grullon</h1>
+            <p class="hero-job"><span>I'M A Full-stack Web Developer</span></p>
+            <p class="hero-job-desc">I focus on balancing design with functionality</p>
+
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#skills"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">Dalian</a>
                     </div>
-                </a>
-                <a href="https://daliangrullon.github.io/weather-dashboard/" target="_blank">
-                    <div id="second-project" class="project">
-                        <h2>Weather Dashboard</h2>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#top">Home</a></li>
+                        <li class="page-scroll"><a href="#skills">skills</a></li>
+                        <li class="page-scroll"><a href="#works">Works</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- skills section -->
+        <section class="site-section section-skills text-center" id="skills">
+            <div class="container">
+                <h2>My skills</h2>
+                <p class="section-subtitle"><span>adaptable, passionate, collaborative, determined</span></p>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-skills">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Front-end</h3>
+                            <p>HTML5, CSS3, JavaScript ES6+, jQuery, Responsive Design, Bootstrap, Local Storage, Session Storage</p>
+                        </div><!-- /.feature-skills -->
+                    </div>                    
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-skills">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-server" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Back-end</h3>
+                            <p>Node.js, Express.js, MySQL, MongoDB, API's, JSON, REST, AJAX</p>
+                        </div><!-- /.feature-skills -->
+                    </div>                    
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-skills">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-git" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Version Control / Deployment</h3>
+                            <p>Git, Heroku, GitHub Pages</p>
+                        </div><!-- /.feature-skills -->
+                    </div>                    
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-skills">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Quality Assurance</h3>
+                            <p>Unit Testing and Functional Testing</p>
+                        </div><!-- /.feature-skills -->
                     </div>
+                </div>
+            </div>
+        </section><!-- /.section-skills -->
+        <!-- End skills section -->
+
+        <!-- Quote section -->
+		<section class="section-background section-quote background-overlay text-center">
+			<div class="container">
+				<p>I help people deliver their services by creating <span>user interfaces</span> and <span>systems</span> that ensure <span>optimal functionality</span> and <span>user experience</span>.</p>
+			</div>
+		</section><!-- /.section-quote -->
+        <!-- End Quote section -->
+
+        <!-- Portfolio/Works section --> 
+        <section class="site-section section-works" id="works">
+            <div class="container">
+                <h2>RECENT WORK</h2>
+                <p class="section-subtitle"><span>Always learning and growing</span></p>
+
+                <div class="portfolio">
+                    <ul class="portfolio-sorting list-inline">
+                        <li><a href="#" class="" data-group="webdev">Web Development</a></li>
+                    </ul><!-- /.portfolio-sorting  -->
+
+                    <div id="grid">
+                        
+                        <!-- Portfolio item --> 
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="./assets/img/no-time-to-weight.jpg" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem1">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>No Time to Weight</h3>
+                                    <p>Front-end</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="./assets/img/note-taker-app.jpg" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem2">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Note Taker App</h3>
+                                    <p>Full-stack</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="./assets/img/weather-dashboard.jpg" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem3">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Weather Dashboard</h3>
+                                    <p>Front-end</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="./assets/img/work-day-scheduler.jpg" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem4">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Workday Scheduler</h3>
+                                    <p>Front-end</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+
+                    </div><!-- /#grid -->
+                </div>
+            </div>
+        </section><!-- /.section-works -->
+        <!-- End Works section --> 
+
+        <!-- resume section --> 
+        <section class="section-background section-resume background-overlay text-center">
+            <div class="container">
+                <div class="rectangle">
+                    <i class="fa fa-book"></i>
+                </div>
+                <p>Impressed with my work? You can view my resume for more information by clicking the button below.</p>
+                <a href="file:///Users/daliangrullon/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/all/Resume:cv/My%20Resumes/Software/DalianGrullon_Resume.pdf" target="_blank" class="btn btn-inverted">My Resume</a>
+            </div>
+        </section><!-- /.section-resume-->
+        <!-- End resume section --> 
+
+        <!-- Contacts section --> 
+        <section class="site-section section-contact" id="contact">
+            <div class="container">
+                <h2>CONTACT Me</h2>
+                <p class="section-subtitle"><span>I will recieve this via Email</span></p>
+                <div class="row">
+                    <form action="https://formsubmit.co/dalian.business@aol.com" method="POST">
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" name="_subject" placeholder="Subject" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-inverted">Send Message</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section --> 
+        
+        <!-- Social Networks section --> 
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <a href="https://www.instagram.com/daliangrullon/" target="_blank" class="rectangle">
+                    <i class="fa fa-instagram"></i>
                 </a>
-                <a href="https://daliangrullon.github.io/timed-code-quiz/" target="_blank">
-                    <div id="third-project" class="project">
-                        <h2>Timed Code Quiz</h2>
-                    </div>
+                <a href="https://twitter.com/DalianGrullon" target="_blank" class="rectangle">
+                    <i class="fa fa-twitter"></i>
                 </a>
-            </section>
-        </section>
-    </main>
-    <footer class="social-container"> <!-- contact me section -->
-        <div class="social">
-            <!-- twitter -->
-            <a href="https://twitter.com/daliangrullon" target="_blank"><img src="./assets/images/Twitter social icons - circle - blue.png" alt="twitter logo" id="twitter"></a>
-            <!-- linkedin -->
-            <a href="https://www.linkedin.com/in/dalian-grullon-94b4b3147/" target="_blank"><img src="./assets/images/download-icon-linkedin+logo+logo+website+icon-1320190502911715717_128.png" alt="linkedin logo" id="linkedin"></a>
-            <!-- github -->
-            <a href="https://github.com/DalianGrullon" target="_blank"><img src="./assets/images/GitHub-Mark-Light-120px-plus.png" alt="github logo" id="github"></a>
-            <!-- email -->
-            <a href="mailto: dalian.business@aol.com" target="_blank"><img src="./assets/images/email-logo-png-1119-128x128.ico" alt="email icon" id="email"></a>
+                <a href="mailto:dalian.business@aol.com" class="rectangle">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/daliangrullon/" target="_blank" class="rectangle">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section --> 
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer">
+
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="#top">Home</a></li>
+                <li class="page-scroll"><a href="#skills">skills</a></li>
+                <li class="page-scroll"><a href="#works">Works</a></li>
+                <li class="page-scroll"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
         </div>
-    </footer>
+
+        <div class="container text-center">
+            <p class="copyright">&copy; Dalian Grullon</a> - 2022</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+    <!-- Modals -->
+    <div id="portfolioItem1" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="./assets/img/no-time-to-weight.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">No Time to Weight</h4>
+                    <p><a href="https://github.com/pbnj1/No-time-to-weight-app" target="_blank">Source Code</a></p>
+                    <br>
+                    <p>
+                        No Time to Weight is a web application that aims to address chronic health and disease burden at the root cause by helping users improve their meal planning and increase their overall activity levels.
+                    </p>
+
+                    <p>
+                        The app will guide the user through a series of questions that will collect individualized data - which will be used create a personal plan to help the user reach their bodyweight goals and recommended daily activity levels.
+                    </p>
+                    <p><strong>Technology Used:</strong> <em>HTML, CSS, JavaScript, jQuery, Tailwind CSS, Spoonacular API, Calorie API</em></p>
+                    <p><strong>Concepts Learned:</strong> <em>Agile Software Development, Wireframing and Design, Fetch API, JSON</em></p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://pbnj1.github.io/No-time-to-weight-app/" target="_blank" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="./assets/img/note-taker-app.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Note Taker App</h4>
+                    <p><a href="https://github.com/DalianGrullon/note-taker-app" target="_blank">Source Code</a></p>
+                    <br>
+                    <p>Note Taker makes taking notes fun and easy. Based on its current version, it does not include a way for users to store their own personal notes, so all the notes taken will be public and everyone who visits the site will be able to see and delete all notes present!</p>
+                    <p><strong>Technology Used:</strong> <em>HTML, CSS, JavaScript, Node.js, Express.js</em></p>
+                    <p><strong>Concepts Learned:</strong> <em>Modularization of Server-side Code via Routes and Helpers, File System (Read, Write, and Append)</em></p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://note-taker-app-daliangrullon.herokuapp.com/" target="_blank" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="./assets/img/weather-dashboard.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Weather Dashboard</h4>
+                    <p><a href="https://github.com/DalianGrullon/weather-dashboard" target="_blank">Source Code</a></p>
+                    <br>
+                    <p>Weather Dashboard makes finding the weather forecast for any city within the United States easy.</p>
+                    <p><strong>Technology Used:</strong> <em>HTML, CSS, JavaScript, Moment.js, Bootstrap</em></p>
+                    <p><strong>Concepts Learned:</strong> <em>Conditional Operators, Defining Functions, Event Listeners, Scoping, Local Storage Manipulation</em></p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://daliangrullon.github.io/weather-dashboard/" target="_blank" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem4" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="./assets/img/work-day-scheduler.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Workday Scheduler</h4>
+                    <p><a href="https://github.com/DalianGrullon/work-day-scheduler" target="_blank">Source Code</a></p>
+                    <br>
+                    <p>Workday Scheduler eliminates the worry associated with planning your work week by providing you a way to save events and update as needed.</p>
+                    <p><strong>Technology Used:</strong> <em>HTML, CSS, JavaScript, Local Storage, jQuery, Moment.js</em></p>
+                    <p><strong>Concepts Learned:</strong> <em>If/Else Statements, Global vs. Local Scope, For Loops, On Click Event Listeners</em></p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://daliangrullon.github.io/work-day-scheduler/" target="_blank" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Can add up to 4 more modals for portfolio (under web development category): total 8 -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  
 </body>
 </html>
