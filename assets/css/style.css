@@ -974,7 +974,7 @@ html, body {
 
 @media only screen and (max-width: 479px) {
   /* Section: Portfolio */
-  .section-works .col-xs-6 {
+  .section-work .col-xs-6 {
     width: 100%;
   }
 }
